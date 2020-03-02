@@ -7,25 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C74314F2408A8940057D948 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C74314E2408A8930057D948 /* bgm.mp3 */; };
+		2C7431512408AB070057D948 /* bgm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C7431502408AB060057D948 /* bgm1.mp3 */; };
 		2C8BA91824067F3C0012022B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA91724067F3C0012022B /* AppDelegate.m */; };
-		2C8BA91A24067F3C0012022B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BA91924067F3C0012022B /* GameScene.sks */; };
-		2C8BA91C24067F3C0012022B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BA91B24067F3C0012022B /* Actions.sks */; };
-		2C8BA91F24067F3C0012022B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA91E24067F3C0012022B /* GameScene.m */; };
 		2C8BA92224067F3C0012022B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA92124067F3C0012022B /* GameViewController.m */; };
 		2C8BA92524067F3C0012022B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BA92324067F3C0012022B /* Main.storyboard */; };
 		2C8BA92724067F410012022B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BA92624067F410012022B /* Assets.xcassets */; };
 		2C8BA92A24067F410012022B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BA92824067F410012022B /* LaunchScreen.storyboard */; };
 		2C8BA92D24067F410012022B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA92C24067F410012022B /* main.m */; };
+		2C8BA9352406851D0012022B /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA9342406851D0012022B /* MenuScene.m */; };
+		2C8BA93824069C9F0012022B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA93724069C9F0012022B /* GameScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C74314E2408A8930057D948 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		2C7431502408AB060057D948 /* bgm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm1.mp3; sourceTree = "<group>"; };
 		2C8BA91324067F3C0012022B /* ShootGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8BA91624067F3C0012022B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C8BA91724067F3C0012022B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2C8BA91924067F3C0012022B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		2C8BA91B24067F3C0012022B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		2C8BA91D24067F3C0012022B /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		2C8BA91E24067F3C0012022B /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		2C8BA92024067F3C0012022B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		2C8BA92124067F3C0012022B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		2C8BA92424067F3C0012022B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +32,10 @@
 		2C8BA92924067F410012022B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8BA92B24067F410012022B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8BA92C24067F410012022B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C8BA9332406851D0012022B /* MenuScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		2C8BA9342406851D0012022B /* MenuScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
+		2C8BA93624069C9F0012022B /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		2C8BA93724069C9F0012022B /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,19 +68,21 @@
 		2C8BA91524067F3C0012022B /* ShootGame */ = {
 			isa = PBXGroup;
 			children = (
+				2C7431502408AB060057D948 /* bgm1.mp3 */,
+				2C74314E2408A8930057D948 /* bgm.mp3 */,
 				2C8BA91624067F3C0012022B /* AppDelegate.h */,
 				2C8BA91724067F3C0012022B /* AppDelegate.m */,
-				2C8BA91924067F3C0012022B /* GameScene.sks */,
-				2C8BA91B24067F3C0012022B /* Actions.sks */,
-				2C8BA91D24067F3C0012022B /* GameScene.h */,
-				2C8BA91E24067F3C0012022B /* GameScene.m */,
 				2C8BA92024067F3C0012022B /* GameViewController.h */,
 				2C8BA92124067F3C0012022B /* GameViewController.m */,
+				2C8BA9332406851D0012022B /* MenuScene.h */,
+				2C8BA9342406851D0012022B /* MenuScene.m */,
 				2C8BA92324067F3C0012022B /* Main.storyboard */,
 				2C8BA92624067F410012022B /* Assets.xcassets */,
 				2C8BA92824067F410012022B /* LaunchScreen.storyboard */,
 				2C8BA92B24067F410012022B /* Info.plist */,
 				2C8BA92C24067F410012022B /* main.m */,
+				2C8BA93624069C9F0012022B /* GameScene.h */,
+				2C8BA93724069C9F0012022B /* GameScene.m */,
 			);
 			path = ShootGame;
 			sourceTree = "<group>";
@@ -140,10 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8BA92524067F3C0012022B /* Main.storyboard in Resources */,
-				2C8BA91A24067F3C0012022B /* GameScene.sks in Resources */,
+				2C7431512408AB070057D948 /* bgm1.mp3 in Resources */,
 				2C8BA92724067F410012022B /* Assets.xcassets in Resources */,
 				2C8BA92A24067F410012022B /* LaunchScreen.storyboard in Resources */,
-				2C8BA91C24067F3C0012022B /* Actions.sks in Resources */,
+				2C74314F2408A8940057D948 /* bgm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8BA91F24067F3C0012022B /* GameScene.m in Sources */,
 				2C8BA92224067F3C0012022B /* GameViewController.m in Sources */,
+				2C8BA9352406851D0012022B /* MenuScene.m in Sources */,
+				2C8BA93824069C9F0012022B /* GameScene.m in Sources */,
 				2C8BA92D24067F410012022B /* main.m in Sources */,
 				2C8BA91824067F3C0012022B /* AppDelegate.m in Sources */,
 			);
@@ -298,14 +304,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VN29RA82W;
 				INFOPLIST_FILE = ShootGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.linlufeng.ShootGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,14 +322,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VN29RA82W;
 				INFOPLIST_FILE = ShootGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.linlufeng.ShootGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

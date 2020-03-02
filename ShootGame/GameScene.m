@@ -8,75 +8,69 @@
 
 #import "GameScene.h"
 
-@implementation GameScene {
-    SKShapeNode *_spinnyNode;
-    SKLabelNode *_label;
+@implementation GameScene
+- (instancetype)initWithSize:(CGSize)size{
+    if (self = [super initWithSize:size]) {
+        [self addBackground];
+        [self generateEnemy];
+    }
+    return self;
 }
 
-- (void)didMoveToView:(SKView *)view {
-    // Setup your scene here
+- (void)addBackground {
+    SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"bg"];
+    background.name = @"bg";
+    background.size = CGSizeMake(self.size.width, self.size.height);
+    background.position = CGPointMake(background.size.width/2,background.size.height/2);
+    [self addChild:background];
+}
+
+- (void)didMoveToView:(SKView *)view{
+    SKAudioNode *music = [[SKAudioNode alloc] initWithFileNamed:@"bgm1.mp3"];
+    [self addChild:music];
+}
+
+- (void)generateEnemy{
+    CGSize enemySize = CGSizeMake(100, 100);
+    SKSpriteNode *enemy = [SKSpriteNode spriteNodeWithImageNamed:@"enemy2"];
+    enemy.size = enemySize;
+    enemy.position = CGPointMake(enemySize.width/2, self.size.height-enemySize.height/2);
+    enemy.name = @"enemy";
+    enemy.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:enemy.size];
+//    //物理体是否受力
+    enemy.physicsBody.dynamic = NO;
+//    //设置物理体的标识符
+//    enemy.physicsBody.categoryBitMask = 1;
+//    //设置可与哪一类的物理体发生碰撞
+//    enemy.physicsBody.contactTestBitMask = 2;
     
-    // Get label node from scene and store it for use later
-    _label = (SKLabelNode *)[self childNodeWithName:@"//helloLabel"];
+    [self addChild:enemy];
+    SKAction *left = [SKAction moveToX:self.size.width duration:1.0];
+    SKAction *right = [SKAction moveToX:0 duration:1.0];
+    SKAction *sq = [SKAction sequence:@[left, right]];
+    [enemy runAction:[SKAction repeatActionForever:sq]];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    CGSize heroSize = CGSizeMake(100, 100);
+    SKSpriteNode *hero = [SKSpriteNode spriteNodeWithImageNamed:@"hero"];
+    hero.size = heroSize;
+    hero.position = CGPointMake(self.size.width/2, 0);
+    hero.anchorPoint = CGPointMake(0.5, 1);
+    hero.zPosition = 1;
+    hero.name = @"hero";
+    hero.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:hero.size];
+//    //物理体是否受力
+//    hero.physicsBody.dynamic = YES;
+//    //设置物理体的标识符
+//    hero.physicsBody.categoryBitMask = 2;
+//    //设置可与哪一类的物理体发生碰撞
+//    hero.physicsBody.contactTestBitMask = 1;
     
-    _label.alpha = 0.0;
-    [_label runAction:[SKAction fadeInWithDuration:2.0]];
-    
-    CGFloat w = (self.size.width + self.size.height) * 0.05;
-    
-    // Create shape node to use during mouse interaction
-    _spinnyNode = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(w, w) cornerRadius:w * 0.3];
-    _spinnyNode.lineWidth = 2.5;
-    
-    [_spinnyNode runAction:[SKAction repeatActionForever:[SKAction rotateByAngle:M_PI duration:1]]];
-    [_spinnyNode runAction:[SKAction sequence:@[
-                                                [SKAction waitForDuration:0.5],
-                                                [SKAction fadeOutWithDuration:0.5],
-                                                [SKAction removeFromParent],
-                                                ]]];
+    [self addChild:hero];
+    //添加动作
+    [hero runAction:[SKAction moveToY:self.size.height duration:2]];
 }
 
-
-- (void)touchDownAtPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor greenColor];
-    [self addChild:n];
-}
-
-- (void)touchMovedToPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor blueColor];
-    [self addChild:n];
-}
-
-- (void)touchUpAtPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor redColor];
-    [self addChild:n];
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    // Run 'Pulse' action from 'Actions.sks'
-    [_label runAction:[SKAction actionNamed:@"Pulse"] withKey:@"fadeInOut"];
-    
-    for (UITouch *t in touches) {[self touchDownAtPoint:[t locationInNode:self]];}
-}
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-    for (UITouch *t in touches) {[self touchMovedToPoint:[t locationInNode:self]];}
-}
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    for (UITouch *t in touches) {[self touchUpAtPoint:[t locationInNode:self]];}
-}
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-    for (UITouch *t in touches) {[self touchUpAtPoint:[t locationInNode:self]];}
-}
-
-
--(void)update:(CFTimeInterval)currentTime {
-    // Called before each frame is rendered
-}
 
 @end
