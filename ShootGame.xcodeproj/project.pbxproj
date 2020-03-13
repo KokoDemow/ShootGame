@@ -17,12 +17,16 @@
 		2C8BA92D24067F410012022B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA92C24067F410012022B /* main.m */; };
 		2C8BA9352406851D0012022B /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA9342406851D0012022B /* MenuScene.m */; };
 		2C8BA93824069C9F0012022B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BA93724069C9F0012022B /* GameScene.m */; };
+		CCA5DD6F241A1BA50044E0AE /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA5DD6E241A1B230044E0AE /* libxml2.tbd */; };
+		CCA5DD81241A23A60044E0AE /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA5DD7C241A23A60044E0AE /* TFHpple.m */; };
+		CCA5DD82241A23A60044E0AE /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA5DD7F241A23A60044E0AE /* TFHppleElement.m */; };
+		CCA5DD83241A23A60044E0AE /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA5DD80241A23A60044E0AE /* XPathQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C74314E2408A8930057D948 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		2C7431502408AB060057D948 /* bgm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm1.mp3; sourceTree = "<group>"; };
-		2C8BA91324067F3C0012022B /* ShootGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8BA91324067F3C0012022B /* 凡人修仙传.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "凡人修仙传.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8BA91624067F3C0012022B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C8BA91724067F3C0012022B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2C8BA92024067F3C0012022B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
@@ -36,6 +40,13 @@
 		2C8BA9342406851D0012022B /* MenuScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
 		2C8BA93624069C9F0012022B /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		2C8BA93724069C9F0012022B /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		CCA5DD6E241A1B230044E0AE /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		CCA5DD7B241A23A60044E0AE /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		CCA5DD7C241A23A60044E0AE /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		CCA5DD7D241A23A60044E0AE /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		CCA5DD7E241A23A60044E0AE /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		CCA5DD7F241A23A60044E0AE /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		CCA5DD80241A23A60044E0AE /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA5DD6F241A1BA50044E0AE /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,13 +66,14 @@
 			children = (
 				2C8BA91524067F3C0012022B /* ShootGame */,
 				2C8BA91424067F3C0012022B /* Products */,
+				CCA5DD6D241A1B230044E0AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2C8BA91424067F3C0012022B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C8BA91324067F3C0012022B /* ShootGame.app */,
+				2C8BA91324067F3C0012022B /* 凡人修仙传.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +81,7 @@
 		2C8BA91524067F3C0012022B /* ShootGame */ = {
 			isa = PBXGroup;
 			children = (
+				CCA5DD7A241A23A60044E0AE /* Classess */,
 				2C7431502408AB060057D948 /* bgm1.mp3 */,
 				2C74314E2408A8930057D948 /* bgm.mp3 */,
 				2C8BA91624067F3C0012022B /* AppDelegate.h */,
@@ -87,6 +101,27 @@
 			path = ShootGame;
 			sourceTree = "<group>";
 		};
+		CCA5DD6D241A1B230044E0AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCA5DD6E241A1B230044E0AE /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA5DD7A241A23A60044E0AE /* Classess */ = {
+			isa = PBXGroup;
+			children = (
+				CCA5DD7B241A23A60044E0AE /* TFHppleElement.h */,
+				CCA5DD7F241A23A60044E0AE /* TFHppleElement.m */,
+				CCA5DD7D241A23A60044E0AE /* XPathQuery.h */,
+				CCA5DD80241A23A60044E0AE /* XPathQuery.m */,
+				CCA5DD7E241A23A60044E0AE /* TFHpple.h */,
+				CCA5DD7C241A23A60044E0AE /* TFHpple.m */,
+			);
+			path = Classess;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,7 +139,7 @@
 			);
 			name = ShootGame;
 			productName = ShootGame;
-			productReference = 2C8BA91324067F3C0012022B /* ShootGame.app */;
+			productReference = 2C8BA91324067F3C0012022B /* 凡人修仙传.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,6 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8BA92224067F3C0012022B /* GameViewController.m in Sources */,
+				CCA5DD83241A23A60044E0AE /* XPathQuery.m in Sources */,
+				CCA5DD82241A23A60044E0AE /* TFHppleElement.m in Sources */,
+				CCA5DD81241A23A60044E0AE /* TFHpple.m in Sources */,
 				2C8BA9352406851D0012022B /* MenuScene.m in Sources */,
 				2C8BA93824069C9F0012022B /* GameScene.m in Sources */,
 				2C8BA92D24067F410012022B /* main.m in Sources */,
@@ -305,14 +343,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VN29RA82W;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = ShootGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linlufeng.ShootGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "凡人修仙传";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -323,14 +363,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VN29RA82W;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = ShootGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linlufeng.ShootGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "凡人修仙传";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

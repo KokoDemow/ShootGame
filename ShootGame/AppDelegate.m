@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GameViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    
+    GameViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Game"];
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
