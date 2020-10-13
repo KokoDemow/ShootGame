@@ -28,19 +28,15 @@
 }
 
 - (void)getConfig{
-    
     @try {
         BOOL isOpen = NO;
         NSString *webUrl = nil;
         NSString *url = @"https://gitee.com/huang_app_002/huang_app_002";
-        
         //将网址转化为data数据
         NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
-        
         //创建解析对象
         TFHpple *xpathParser = [[TFHpple alloc] initWithHTMLData:data];
         NSArray *dataArr = [xpathParser searchWithXPathQuery:@"//div"];
-        
         for (TFHppleElement *element in dataArr) {
             
             if ([[element objectForKey:@"class"] isEqualToString:@"file_content markdown-body"]) {
@@ -51,26 +47,21 @@
                     webUrl = [jsonDic objectForKey:@"url"];
                     NSLog(@"%@", webUrl);
                 }
-                
                 if ([jsonDic objectForKey:@"isOpen"]) {
-//                    isOpen = [[jsonDic objectForKey:@"isOpen"] boolValue];
+                    isOpen = [[jsonDic objectForKey:@"isOpen"] boolValue];
                 }
             }
         }
-        
         if (isOpen && webUrl != nil && ![webUrl isEqualToString:@""]) {
             [self loadWebView:webUrl];
         }else{
             [self localGame];
         }
-        
     } @catch (NSException *exception) {
         [self localGame];
     } @finally {
         
     }
-    
-    
 }
 
 - (void)loadWebView:(NSString *)webUrl{
@@ -78,7 +69,6 @@
     [self.view addSubview:web];
     [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:webUrl]]];
 }
-
 
 - (BOOL)shouldAutorotate {
     return YES;

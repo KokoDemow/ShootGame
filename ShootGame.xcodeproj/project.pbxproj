@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		2C74314E2408A8930057D948 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		2C7431502408AB060057D948 /* bgm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm1.mp3; sourceTree = "<group>"; };
-		2C8BA91324067F3C0012022B /* 凡人修仙传.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "凡人修仙传.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8BA91324067F3C0012022B /* 凡人修仙2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "凡人修仙2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8BA91624067F3C0012022B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C8BA91724067F3C0012022B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2C8BA92024067F3C0012022B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		2C8BA91424067F3C0012022B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C8BA91324067F3C0012022B /* 凡人修仙传.app */,
+				2C8BA91324067F3C0012022B /* 凡人修仙2020.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			);
 			name = ShootGame;
 			productName = ShootGame;
-			productReference = 2C8BA91324067F3C0012022B /* 凡人修仙传.app */;
+			productReference = 2C8BA91324067F3C0012022B /* 凡人修仙2020.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -341,18 +341,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8VN29RA82W;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5UU6Z88872;
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = ShootGame/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_BUNDLE_IDENTIFIER = com.linlufeng.ShootGame;
-				PRODUCT_NAME = "凡人修仙传";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duotui.ShootGame;
+				PRODUCT_NAME = "凡人修仙2020";
+				PROVISIONING_PROFILE_SPECIFIER = ShootGame;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -361,18 +363,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8VN29RA82W;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5UU6Z88872;
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = ShootGame/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_BUNDLE_IDENTIFIER = com.linlufeng.ShootGame;
-				PRODUCT_NAME = "凡人修仙传";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duotui.ShootGame;
+				PRODUCT_NAME = "凡人修仙2020";
+				PROVISIONING_PROFILE_SPECIFIER = ShootGame;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

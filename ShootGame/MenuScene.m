@@ -29,8 +29,8 @@
     SKAudioNode *music = [[SKAudioNode alloc] initWithFileNamed:@"bgm.mp3"];
     [self addChild:music];
 }
-// 添加背景
 
+// 添加背景
 - (void)addBackground {
     SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"bg"];
     background.name = @"bg";
@@ -84,8 +84,6 @@
         }else{
             [self hiddenRule];
         }
-        
-        
     }
 }
 @end
